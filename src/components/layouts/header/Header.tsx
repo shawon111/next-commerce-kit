@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Search } from 'lucide-react';
-import Logo from '../../../public/next-commerce-kit-logo.png';
+import Logo from '../../../../public/next-commerce-kit-logo.png';
 import CartIcon from './CartIcon';
 import WishListIcon from './WishListIcon';
 import UserIcon from './UserIcon';
 import MobileNav from './MobileNav';
-import Container from './Container';
+import Container from '../Container';
 
 const Header = () => {
     return (
