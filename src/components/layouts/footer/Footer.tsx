@@ -4,13 +4,14 @@ import Image from 'next/image';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import Logo from '../../../../public/next-commerce-kit-logo-dark.png';
 import PaymentMethods from '../../../../public/payment-methods.png';
+import Container from '../Container';
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-200">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+    <footer className="bg-gray-900 text-gray-200 py-12">
+      <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand & About */}
           <div>
@@ -117,7 +118,7 @@ const Footer = () => {
             <Link href="#" className="hover:text-white">Press</Link>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };
